@@ -1,4 +1,9 @@
-## Smogey content based on: Bootstrap 3 / SASS / PUG / GULP / WEBPACK
+## epicurien.be content based on: Bootstrap 3 / SASS / PUG / GULP / WEBPACK
+
+
+#### staging version is on Github pages:
+[epicurien.be](https://kry-dev.github.io/epicurien.be.github.io/build/)
+
 
 #### Need to be installed
 * node.js You'll need to install [Node.js](https://nodejs.org/en/), you can use the `v6.11.0` or above. Then open up a console (Terminal, iTerm, PowerShell, etc.) and install the depencencies for this project.
