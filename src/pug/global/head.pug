@@ -1,0 +1,28 @@
+mixin head(title)
+	head
+		meta(charset="utf-8")
+		title= title
+		meta(name="keywords" content="keywords")
+		meta(name="description" content="description")
+		//favicon
+		//-mixin
+		mixin favicon(rel, sizes, href, type)
+			link(rel= rel, sizes= sizes, href= href, type= type)
+		//viewport
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
+		//- meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		//styles
+
+		link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
+		link(rel="stylesheet" type="text/css" href="assets/css/app.min.css")
+
+		script(src="https://code.jquery.com/jquery-1.10.0.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
+
+		script(src="assets/js/bundle.js")
+		<!--[if lt IE 9]><!-->
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<!--<![endif]-->
+
+

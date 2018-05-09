@@ -1,0 +1,33 @@
+.bread {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: $gray-200;
+	height: 40px;
+	@media (max-width: $screen-xs-min) {
+		.breadcrumb {
+			width: 70%;
+			text-overflow: ellipsis;
+		}
+		.btn {
+			width: 30%;
+			text-align: center;
+		}
+	}
+}
+
+.breadcrumb {
+	border-radius: 0;
+	white-space: nowrap;
+	overflow: hidden;
+	&-item {
+		font-size: 14px;
+		@media (max-width: $screen-sm-max) {
+			font-size: 12px;
+			text-overflow: ellipsis;
+		}
+	}
+	a {
+		color: inherit;
+	}
+}

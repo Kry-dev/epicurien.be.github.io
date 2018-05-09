@@ -1,0 +1,72 @@
+.modal{
+	&-dialog{
+		min-width: 600px;
+		@media (max-width: $screen-sm-max){
+			min-width: inherit;
+			.panel{
+				min-height: inherit;
+			}
+		}
+	}
+	&-header{
+		border-bottom: 0;
+	}
+	&-content{
+		border: 0;
+		border-radius: 0 0 4px 4px;
+	}
+	&-title{
+		display: inline-block;
+		float: left;
+	}
+	.btn-close{
+		display: inline-block;
+		float: right;
+	}
+	.card{
+		min-height: auto;
+	}
+	.fc{
+		min-height: auto;
+		font-size: 10px;
+		.fc-state-default{
+			height: 20px;
+		}
+		 .fc-toolbar .fc-center{
+			 vertical-align: bottom;
+		 }
+		.fc-toolbar h2 {
+			font-size: 12px;
+			line-height: 20px;
+		}
+		th,td{
+			font-size: 10px;
+			border-width: 1px;
+		}
+		button, table{
+			font-size: 10px;
+		}
+		button:focus{
+			outline: 0;
+		}
+		.fc-row .fc-content-skeleton tbody{
+			padding: 0;
+		}
+		.fc-day-number {
+			padding: 1px;
+			font-size: 10px;
+		}
+		.fc-toolbar{
+			height: 20px;
+		}
+		.fc-scroller.fc-day-grid-container {
+			overflow-x: inherit !important;
+			overflow-y: inherit !important;
+			height: 100% !important;
+		}
+		.fc-head-container.fc-widget-header .fc-row {
+			margin-right: 0 !important;
+			border-right-width: 0;
+		}
+	}
+}

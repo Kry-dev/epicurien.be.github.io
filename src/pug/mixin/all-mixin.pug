@@ -1,0 +1,9 @@
+//- link
+mixin link(href,text)
+	a(href= href )= text
+		block
+//- link item
+mixin nav-link(href,text,mod)
+	li.nav-item
+		a(class=`nav-link ${mod}` , href= href )= text
+

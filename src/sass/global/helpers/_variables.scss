@@ -1,0 +1,241 @@
+//@import "../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+//
+// Color system
+//
+$blue: #00bfe3;
+$indigo:  #6610f2;
+$pink:    #d92988;
+$pink-dark: #a90c45;
+$red:     #B50E0B;
+$orange:  #fd7e14;
+$yellow: #fdb32a;
+$green: #96B314;
+$teal: #16a085;
+$cyan:    #17a2b8;
+$gray: #f4f3f3;
+$dark: #2a2a2f;
+
+$error: #dd0000 ;
+$success: $green;
+$white: #fff;
+$gray-50: #f5f5f6;
+$gray-100: #f8f9fa;
+$gray-200: #efefef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #808080;
+$gray-600: #999999;
+$gray-700: #495057;
+$gray-800: $dark;
+$gray-middle: #EEEEEE;
+$black: #000;
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$pink:       		$pink;
+$pink-dark:     $pink-dark;
+$info:          $blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+$dark:          $gray-800;
+
+
+$brand-primary:         $primary;
+$brand-success:         $success;
+$brand-info:            $info;
+$brand-warning:         $warning;
+$brand-danger:          $danger;
+
+.blue       {color:$blue;}
+.indigo     {color:$indigo;}
+.pink       {color:$pink;}
+.red        {color:$red;}
+.orange     {color:$orange;}
+.yellow     {color:$yellow;}
+.green      {color:$green;}
+.teal       {color:$teal;}
+.cyan       {color:$cyan;}
+.white      {color:$white;}
+.gray       {color:$gray-600;}
+.gray-dark  {color:$gray-800;}
+.black   		{color:$black;}
+
+.bg-gray				{background-color: $gray !important; }
+.bg-blue        {background-color:$blue !important; }
+.bg-indigo      {background-color:$indigo !important; }
+.bg-pink        {background-color:$pink !important; }
+.bg-red         {background-color:$red !important; }
+.bg-orange      {background-color:$orange !important; }
+.bg-yellow      {background-color:$yellow !important; }
+.bg-green       {background-color:$green !important; }
+.bg-teal        {background-color:$teal !important; }
+.bg-cyan        {background-color:$cyan !important; }
+.bg-white       {background-color:$white !important; }
+.bg-gray        {background-color:$gray !important; }
+.bg-gray-dark   {background-color:$gray-800 !important; }
+.bg-black   		{background-color:$black !important; }
+.bg-primary     {background-color: $primary !important; }
+.bg-success     {background-color: $success !important; }
+.bg-info        {background-color: $info !important; }
+.bg-warning     {background-color: $warning !important; }
+.bg-danger      {background-color: $danger !important; }
+.bg-pink				{background-color: $pink !important; }
+.bg-pink-dark		{background-color: $pink-dark !important; }
+
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: (
+		10: 10%,
+		20: 20%,
+		25: 25%,
+		30: 30%,
+		40: 40%,
+		50: 50%,
+		60: 60%,
+		70: 70%,
+		75: 75%,
+		80: 80%,
+		90: 90%,
+		100: 100%
+);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$btn-transition: all .15s ease-in-out;
+// Forms
+
+$input-placeholder-color: #9999a1;
+//Titles
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px
+);
+
+$btn-border-radius:           0;
+$input-bg:									$gray;
+$input-border-radius:					0;
+$custom-select-border-radius:  0;
+
+$fa-font-path: "../fonts/FontAwesome";
+$slick-font-path: "./fonts/slick/";
+$slick-loader-path: "../fonts/slick/";
+$slick-font-family: FontAwesome;
+
+// Breadcrumbs
+
+$breadcrumb-padding-y:              .5rem;
+$breadcrumb-padding-x:              1rem;
+$breadcrumb-item-padding:           .5rem;
+$breadcrumb-margin-bottom:          0;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-divider-color:          $gray-600;
+$breadcrumb-active-color:           $gray-600;
+$breadcrumb-divider:                ">";
+
+
+//pagination
+$pagination-color: $success;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12 !default;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-sm-min !default;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             (720px + $grid-gutter-width) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            (940px + $grid-gutter-width) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      (1140px + $grid-gutter-width) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+	@media (min-width: $screen-sm-min) {
+		width: 100%;
+		max-width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: 100%;
+		max-width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: 100%;
+		max-width: $container-lg;
+	}
+}
+
+
+
+

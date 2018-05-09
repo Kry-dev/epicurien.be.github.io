@@ -1,0 +1,67 @@
+@mixin border($direction, $width, $style, $color) {
+	border-#{$direction}: $width solid $color;
+	@if $direction == 'top'{
+		border-bottom: 0;
+		border-right: 0;
+		border-left: 0;
+		border-top: $width solid $color;
+
+	}@else if $direction == 'left'{
+		border-bottom: 0;
+		border-right: 0;
+		border-top: 0;
+	}@else if $direction == 'right'{
+		border-bottom: 0;
+		border-left: 0;
+		border-top: 0;
+	}@else if $direction == 'bottom'{
+		border-top: 0;
+		border-right: 0;
+		border-left: 0;
+	}
+	@if $width == '2'{  border-width: 2px solid $color;  }
+	@else if $width == '3'{  border-width: 3px solid $color;  }
+	@else if $width == '4'{  border-width: 4px solid $color;  }
+	@else if $width == '5'{  border-width: 5px solid $color;  }
+	@if $color == $secondary{ border-color: $secondary}
+	@else if $color == $primary{ border-color: $primary}
+	@else if $color == $success{ border-color: $success}
+	@else if $color == $info{ border-color: $info}
+	@else if $color == $warning{ border-color: $warning}
+	@else if $color == $danger{ border-color: $danger}
+	@else if $color == $pink{ border-color: $pink}
+	@else if $color == $teal{ border-color: $teal}
+}
+.border {
+	&-top{  @include border('top', 1px, solid, $secondary);
+		&-2{@include border('top', 2px, solid, $secondary);}
+		&-3{@include border('top', 3px, solid, $secondary);}
+		&-4{@include border('top', 4px, solid, $secondary);}
+		&-5{@include border('top', 5px, solid, $secondary);}
+	}
+	&-right{  @include border('right', 1px, solid, $secondary);
+		&-2{@include border('right', 2px, solid, $secondary);}
+		&-3{@include border('right', 3px, solid, $secondary);}
+		&-4{@include border('right', 4px, solid, $secondary);}
+		&-5{@include border('right', 5px, solid, $secondary);}
+	}
+	&-bottom{  @include border('bottom', 1px, solid, $secondary);
+		&-2{@include border('bottom', 2px, solid, $secondary);}
+		&-3{@include border('bottom', 3px, solid, $secondary);}
+		&-4{@include border('bottom', 4px, solid, $secondary);}
+		&-5{@include border('bottom', 5px, solid, $secondary);}
+	}
+	&-left{  @include border('left', 1px, solid, $secondary);
+		&-2{@include border('left', 2px, solid, $secondary);}
+		&-3{@include border('left', 3px, solid, $secondary);}
+		&-4{@include border('left', 4px, solid, $secondary);}
+		&-5{@include border('left', 5px, solid, $secondary);}
+	}
+	&-primary{border-color: $primary;}
+	&-success{border-color: $success;}
+	&-info{border-color: $info;}
+	&-warning{border-color: $warning;}
+	&-danger{border-color: $danger;}
+	&-pink{border-color: $pink;}
+	&-teal{border-color: $teal;}
+}

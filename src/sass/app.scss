@@ -1,0 +1,28 @@
+/**@import "global/_normalize";*/
+@import "global/helpers/_variables";
+
+@import "global/slick";
+@import "global/slick-theme";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
+//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+//@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css";
+//@import "../../node_modules/fg-select-css/src/select-css";
+//@import "../../node_modules/fg-select-css/src/select-css-arrow";
+
+/**global styles*/
+@import "global/helpers/helpers_all";
+@import "global/spacing";
+@import "global/global";
+@import "global/typography";
+@import "global/breadcrumb";
+@import "global/fonts";
+@import "global/forms";
+@import "global/cards";
+@import "global/modal";
+@import "global/borders";
+@import "global/buttons";
+
+/**pages styles*/
+
+@import "global/header";

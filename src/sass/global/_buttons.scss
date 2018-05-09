@@ -1,0 +1,138 @@
+.btn {
+	font-size: inherit;
+	color: #fff;
+	height: 40px;
+	flex-direction: row;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 0;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	.fa {
+		font-size: 20px;
+		margin-right: 10px;
+		display: inline-block;
+		float: left;
+		vertical-align: middle;
+	}
+	span {
+		line-height: 24px;
+		text-overflow: ellipsis;
+	}
+	&.btn-sm{
+		height: auto;
+	}
+	&:focus,
+	&:active,
+	&:active:focus {
+		outline: 0;
+		box-shadow: none;
+	}
+	&-block {
+		display: block;
+		line-height: 16px;
+	}
+	&-default {
+		color: inherit;
+	}
+	@media (max-width: $screen-sm-max) {
+		font-size: 14px;
+	}
+}
+
+.btn-search {
+	position: absolute;
+	right: 8px;
+	background-color: transparent;
+	margin: 0;
+	width: 23px;
+	height: 23px;
+	padding: 0;
+	.fa {
+		font-size: 21px;
+		color: rgba($black, .5);
+	}
+	&:hover,
+	&:focus {
+		border: 0;
+		outline: 0 !important;
+		box-shadow: none;
+	}
+}
+
+.btn-close {
+	border: 0;
+	background-color: transparent;
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+	.fa {
+		margin: 0;
+		font-size: 24px;
+	}
+}
+
+.btn-outline-success {
+	color: $success;
+	background-color: $white;
+}
+
+.btn-outline-warning {
+	color: $warning;
+	background-color: $white;
+}
+
+.btn-pink {
+	background-color: $pink;
+	&:focus,
+	&.focus {
+		color: $white;
+		background-color: darken($pink, 10%);
+	}
+	&:hover {
+		color: $white;
+		background-color: darken($pink, 10%);
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $white;
+		background-color: darken($pink, 10%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $white;
+			background-color: darken($pink, 17%);
+		}
+	}
+}
+
+.btn-pink-dark {
+	background-color: $pink-dark;
+	&:focus,
+	&.focus {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+	}
+	&:hover {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $white;
+		background-color: darken($pink-dark, 10%);
+
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $white;
+			background-color: darken($pink-dark, 17%);
+		}
+	}
+}
