@@ -35,6 +35,6 @@
     "webpack": "^3.5.5"
   },
   "dependencies": {
-    "jquery": "^1.9.1",
+    "jquery": "^1.9.1"
   }
 }
