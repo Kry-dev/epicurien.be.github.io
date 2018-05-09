@@ -4,6 +4,8 @@ const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
 
 //svg
+// const svgmin = require('gulp-svgmin');
+// const svgstore = require('gulp-svgstore');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 //images
@@ -41,12 +43,47 @@ const paths = {
         src: 'src/images/*/*.*',
         dest: 'build/assets/img/'
     },
+    // svgIcons: {
+    //     src: 'src/svg/*.svg',
+    //     dest: 'build/assets/img/sprite/'
+    // },
     fonts: {
         src: 'src/fonts/**/*.*',
         dest: 'build/assets/fonts/'
     }
 };
 
+// SVG Sprite Build task
+// function SVGSpriteBuild() {
+//     return gulp
+//         .src(paths.svgIcons.src)
+//         // .pipe(cheerio({
+//         //     run: function ($) {
+//         //         $('[fill]').removeAttr('fill');
+//         //         $('[stroke]').removeAttr('stroke');
+//         //         $('[style]').removeAttr('style');
+//         //     },
+//         //     parserOptions: { xmlMode: true }
+//         // }))
+//         .pipe(svgmin(function (file) {
+//             //var prefix = path.basename(file.relative, path.svgIcons(file.relative));
+//             return {
+//                 plugins: [{
+//                     cleanupIDs: {
+//                         //prefix: prefix + '-',
+//                         minify: true
+//                     }
+//                 }]
+//             }
+//         }))
+//         .pipe(replace('&gt;', '>'))
+//         .pipe(svgstore({ inlineSvg: true }))
+//         .pipe(rename({
+//             basename: "sprite",
+//             suffix: ".min"
+//         }))
+//         .pipe(gulp.dest(paths.svgIcons.dest));
+// }
 
 // pug
 function templates() {
@@ -99,6 +136,7 @@ function vendorScripts() {
 
 // look at the changes and compilation
 function watch() {
+    // gulp.watch(paths.svgIcons.src, SVGSpriteBuild);
     gulp.watch(paths.scripts.src, scripts);
     gulp.watch(paths.styles.src, styles);
     gulp.watch(paths.templates.src, templates);
@@ -116,6 +154,7 @@ function server() {
 
 // экспортируем функции для доступа из терминала (gulp clean)
 exports.clean = clean;
+// exports.SVGSpriteBuild = SVGSpriteBuild;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.templates = templates;
@@ -128,6 +167,7 @@ exports.server = server;
 // сборка и слежка
 gulp.task('default', gulp.series(
     clean,
+    // gulp.parallel(SVGSpriteBuild, fonts, styles, scripts, templates, images),
     gulp.parallel( fonts, styles, scripts,vendorScripts, templates, images),
     gulp.parallel(watch, server)
 ));

@@ -1,4 +1,4 @@
-## Smogey content based on: Bootstrap 4 / SASS / PUG / GULP / WEBPACK
+## Smogey content based on: Bootstrap 3 / SASS / PUG / GULP / WEBPACK
 
 #### Need to be installed
 * node.js You'll need to install [Node.js](https://nodejs.org/en/), you can use the `v6.11.0` or above. Then open up a console (Terminal, iTerm, PowerShell, etc.) and install the depencencies for this project.
@@ -37,7 +37,8 @@ gulp
 [Pug](http://pugjs.org) (formerly Jade) for HTML layout, you can check out the official [language reference](https://pugjs.org/api/getting-started.html) to see how it works. <br/>
 If you find the syntax too heavy, you can also just write plain HTML and run it through a [converter](http://html2jade.org/) when you're happy with your code.
 
-[Bootstrap 4](https://v4-alpha.getbootstrap.com/) with our own custom overrides in [`global.scss`](sass/global.scss). The idea is to customize and use as much of the existing components as possible.
+[Bootstrap 3](https://getbootstrap.com/docs/3.3/) with our own custom overrides in [`global.scss`](sass/global.scss). The idea is to 
+customize and use as much of the existing components as possible.
 
 ### How to create a new page
 

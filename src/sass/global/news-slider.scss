@@ -1,0 +1,41 @@
+.new-slider {
+	width: 100%;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		font-size: 23px;
+		background-color: $primary;
+		padding: 5px 10px;
+		color: $white;
+		z-index: 100;
+		border: 0;
+		&.right {  right: 0;  }
+		&.left {  left: 0;  }
+		&:focus {  outline: 0;  }
+	}
+	li {
+		a {
+			display: block;
+			position: relative;
+			img {  width: 100%;  }
+		}
+	}
+	&__title {
+		position: absolute;
+		bottom: 0;
+		color: $white;
+		background-color: rgba($black, .5);
+		width: 100%;
+		padding: 1rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		@media (max-width: $screen-sm-max) {
+			padding: 1rem 50px;
+			font-size: $font-size-h5;
+		}
+	}
+}

@@ -3,12 +3,12 @@
 
 @import "global/slick";
 @import "global/slick-theme";
-//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
-//@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-//@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../../node_modules/font-awesome/scss/font-awesome";
 @import "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css";
-//@import "../../node_modules/fg-select-css/src/select-css";
-//@import "../../node_modules/fg-select-css/src/select-css-arrow";
+@import "../../node_modules/fg-select-css/src/select-css";
+@import "../../node_modules/fg-select-css/src/select-css-arrow";
 
 /**global styles*/
 @import "global/helpers/helpers_all";
@@ -24,5 +24,13 @@
 @import "global/buttons";
 
 /**pages styles*/
+@import "global/news-slider";
+@import "global/brands-slider";
+@import "global/initiv-cards";
+@import "global/category-box";
+@import "global/blog";
+@import "global/map";
+@import "global/calendar";
+@import "global/fullCalendar";
 
 @import "global/header";

@@ -1,0 +1,358 @@
+$padding-base: 15px;
+$color-body: $white;
+$color-border: $primary;
+$border-radius: 0;
+
+.nav-tabs {
+	&--vertical {
+		border-bottom: none;
+		display: flex;
+		flex-flow: column nowrap;
+		background-color: $primary;
+	}
+	&--left {
+		.nav-link {
+			transition: border-color .125s ease-in;
+			white-space: nowrap;
+			border-radius: 0;
+			border: 0;
+			padding: 5px;
+			width: 50px;
+			height: 50px;
+			&:hover {
+				background-color: lighten($color-border, 10%);
+				border-color: transparent;
+				border: 0;
+			}
+		}
+		.nav-link.active {
+			border-left: 5px solid $primary;
+		}
+	}
+	li.active > a,
+	li.active > a:hover,
+	li.active > a:focus {
+		border: 0;
+	}
+}
+
+.map {
+	min-height: 50vh;
+	width: 100%;
+	&-filter {
+		height: 540px;
+		width: 100%;
+		display: block;
+		@media (max-width: $screen-md-min) {
+			height: auto;
+			min-height: 310px;
+		}
+		.nav-tabs {
+			display: inline-block;
+			width: 60px;
+			height: 100%;
+			float: left;
+			padding-left: 10px;
+			@media (max-width: $screen-md-min) {
+				display: block;
+				width: 100%;
+				height: auto;
+				float: none;
+				padding: 0;
+			}
+		}
+		a{
+			color: inherit;
+			font-weight: bold;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	&-filter-btn {
+		display: block;
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+		img{
+			width: 100%;
+		}
+	}
+	&-pin-toggle {
+		content: '/f055';
+		width: 30px;
+		height: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $white;
+		&:checked {
+			content: '/f056';
+		}
+		.fa {
+			font-size: 30px;
+		}
+		.fa-plus-circle {
+			color: $success;
+		}
+		.fa-minus-circle {
+			color: $danger;
+		}
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.tab-pane {
+		height: 100%;
+		&-header {
+			padding: 1rem;
+			height: 60px;
+		}
+		&-title {
+			margin-bottom: 0;
+		}
+		.list-group {
+			height: calc(100% - 60px);
+			fieldset {
+				height: 100%;
+				background-color: $white;
+			}
+		}
+	}
+	.tab-content {
+		display: inline-block;
+		padding: 0 .5rem 1rem;
+		width: 80%;
+		height: 100%;
+		&.active {
+			display: block;
+		}
+		@media (max-width: $screen-md-min) {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.form-group {
+		display: flex;
+		width: 100%;
+		background-color: $white;
+		flex-direction: row;
+		justify-content: space-between;
+		border: 0;
+		border-radius: 0;
+		padding: .75rem 2rem;
+		margin-bottom: 0;
+		position: relative;
+		.map-pin {
+			position: absolute;
+			left: 5px;
+			top: 10px;
+			width: 22px;
+			//height: 30px;
+		}
+		label {
+			display: flex;
+			width: 100%;
+			justify-self: flex-start;
+			margin-bottom: 0;
+			&:hover,
+			&:focus {
+				cursor: pointer;
+			}
+		}
+		input.checkbox {
+			position: absolute;
+			right: 5px;
+			width: 30px;
+			height: 30px;
+			margin: 0;
+			&:before {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				width: 30px;
+				height: 30px;
+				background-color: $white;
+				content: "\f055";
+				color: $success;
+				font-size: 20px;
+				font-family: FontAwesome;
+				z-index: 100;
+			}
+			&:checked:before {
+				content: "\f056";
+				color: $danger;
+			}
+		}
+	}
+}
+
+.map {
+	&-content {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: relative;
+		.btn-warning {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 50;
+		}
+		.btn-pink {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 50;
+		}
+		iframe {
+			width: 100%;
+			height: 600px;
+		}
+	}
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map-canvas {
+	height: 100%;
+	width: 100%;
+	.gm-style-iw {
+		overflow: visible !important;
+		width: 280px !important;
+		@media (max-width: $screen-sm-max) {
+			width: 200px !important;
+		}
+		div {
+			overflow: visible !important;
+			width: 100%;
+			div {
+				width: 100%;
+			}
+		}
+		&::before {
+			content: '';
+			width: calc(100% + 52px);
+			height: calc(100% + 17px);
+			position: absolute;
+			left: -15px;
+			top: -8px;
+			background-color: $white;
+		}
+
+		// arrow
+		&::after {
+			content: '';
+			width: 0;
+			height: 0;
+			border: 25px solid transparent;
+			border-top-color: #fff;
+			z-index: 4;
+			position: absolute;
+			top: auto;
+			bottom: -56px;
+			left: 50%;
+			margin-left: -13px;
+		}
+	}
+	img[src="https://maps.gstatic.com/mapfiles/api-3/images/mapcnt6.png"] {
+		top: -305px!important;
+	}
+}
+
+.map-tooltip {
+	z-index: 35;
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	background-color: $white;
+	&-header {
+		display: flex;
+		flex-direction: row;
+		width: calc(100% + 52px) !important;
+		color: $white;
+		background-color: $success;
+		align-items: center;
+		padding: .5rem;
+		position: absolute;
+		left: -15px;
+		top: -18px;
+		height: 50px;
+		border-radius: 5px 5px 0 0;
+	}
+	&-title {
+		font-size: 16px;
+		text-align: left;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	&-content {
+		padding: 50px 0 1rem 1rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		align-items: flex-start;
+		&-left {
+			width: 80% !important;
+		}
+		&-right {
+			width: 20% !important;
+			img {
+				width: 40px;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+	.btn {
+		position: relative;
+		width: 150px;
+		display: block;
+	}
+	#map-tooltip-close{
+		background: transparent;
+		color: $white;
+		position: absolute;
+		right: 10px;
+		border: none;
+		top: 15px;
+		.fa{
+			font-size: 20px;
+		}
+	}
+}
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#floating-panel {
+	position: absolute;
+	top: 10px;
+	left: 25%;
+	z-index: 5;
+	background-color: $white;
+	padding: 5px 5px 5px 10px;
+	border: 1px solid #999;
+	text-align: center;
+	font-family: 'Roboto', 'sans-serif';
+	line-height: 30px;
+}
+
+.pac-container {
+	background-color: $white;
+	z-index: 20;
+	position: fixed;
+	display: inline-block;
+	float: left;
+}
