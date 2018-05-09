@@ -20,17 +20,26 @@
     </head>
   <body>
     <header class="header text-white">
-      <nav class="navbar navbar-inverse bg-danger navbar-fixed-top">
+      <nav class="navbar navbar-inverse">
         <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
           </div>
           <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#"><i class="fa fa-chevron-down"></i> Recettes de cuisine</a></li>
-              <li><a href="#"><i class="fa fa-chevron-down"></i> Restaurants</a></li>
-              <li><a href="#"><i class="fa fa-chevron-down"></i> Voyages</a></li>
-              <li><a href="#"><i class="fa fa-chevron-down"></i> Blog</a></li>
+              <li><a href="#"><i class="fa fa-chevron-down"></i> Recettes de cuisine</a></li>
+              <!--li-->
+              <!--	a(href='#')-->
+              <!--		i.fa.fa-chevron-down-->
+              <!--		|  Restaurants-->
+              <!--li-->
+              <!--	a(href='#')-->
+              <!--		i.fa.fa-chevron-down-->
+              <!--		|  Voyages-->
+              <!--li-->
+              <!--	a(href='#')-->
+              <!--		i.fa.fa-chevron-down-->
+              <!--		|  Blog-->
               <!--li.dropdown-->
               <!--	a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')-->
               <!--		| Dropdown-->
@@ -56,5 +65,49 @@
         </div>
       </nav>
     </header>
+    <section class="search">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form>
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Je cherche ..."/><span class="input-group-btn">
+                  <button class="btn btn-default bg-danger" type="button"><i class="fa fa-chevron-right text-white"></i></button></span>
+              </div>
+              <ul class="d-block">
+                <li class="d-inline-block"><a class="text-underline" href="#">panna cotta</a></li>
+                <li class="d-inline-block"><a class="text-underline" href="#">magrets de canard</a></li>
+                <li class="d-inline-block"><a class="text-underline" href="#">confitures de fraise</a></li>
+                <li class="d-inline-block"><a class="text-underline" href="#">tiramisu</a></li>
+                <li class="d-inline-block"><a class="text-underline" href="#">chocolat</a></li>
+                <li class="d-inline-block"><a class="text-underline" href="#">aubergines</a></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+        <div class="row category">
+          <div class="col-md-2">
+            <h5>MOMENTS DU REPAS</h5>
+            <div class="d-block"><a class="d-inline-block" href="#">Apéritif, </a><a class="d-inline-block" href="#"> Mise en bouche,</a><a class="d-inline-block" href="#"> Entrées ,</a><a class="d-inline-block" href="#"> Plats,</a><a class="d-inline-block" href="#"> Desserts</a></div>
+          </div>
+          <div class="col-md-2">
+            <h5>INGREDIENTS</h5>
+            <div class="d-block"><a class="d-inline-block" href="#">Viandes, </a><a class="d-inline-block" href="#"> Poissons,</a><a class="d-inline-block" href="#"> Volailles,</a><a class="d-inline-block" href="#"> Légumes</a></div>
+          </div>
+          <div class="col-md-2">
+            <h5>PREPARATIONS</h5>
+            <div class="d-block"><a class="d-inline-block" href="#">Gâteaux, </a><a class="d-inline-block" href="#"> Tartes,</a><a class="d-inline-block" href="#"> Gratins,</a><a class="d-inline-block" href="#"> Tajines,</a><a class="d-inline-block" href="#"> Confitures,</a><a class="d-inline-block" href="#"> Salades,</a><a class="d-inline-block" href="#"> Verrines</a></div>
+          </div>
+          <div class="col-md-2">
+            <h5>PAYS & REGIONS</h5>
+            <div class="d-block"><a class="d-inline-block" href="#">Italie,</a><a class="d-inline-block" href="#">Belgique,</a><a class="d-inline-block" href="#">France,</a><a class="d-inline-block" href="#">Maroc,</a><a class="d-inline-block" href="#">Thaîlande</a></div>
+          </div>
+          <div class="col-md-2">
+            <h5>EVENEMENTS & FETES</h5>
+            <div class="d-block"><a class="d-inline-block" href="#">Barbecue,</a><a class="d-inline-block" href="#">Pique nique,</a><a class="d-inline-block" href="#">Brunch</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

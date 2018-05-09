@@ -1,0 +1,10 @@
+.navbar{
+	border: 0;
+	&-fixed-top{
+	}
+	&-nav{
+		li a{
+			color: $white;
+		}
+	}
+}

@@ -7,5 +7,67 @@ html(lang="en")
 	include mixin/all-mixin
 	body
 		include global/header
-
+		section.search
+			.container
+				.row
+					.col-md-12
+						form
+							.input-group
+								input.form-control(type='text',  placeholder='Je cherche ...')
+								span.input-group-btn
+									button.btn.btn-default.bg-danger(type='button')
+										i.fa.fa-chevron-right.text-white
+							ul.d-block
+								li.d-inline-block
+									a(href="#").text-underline panna cotta
+								li.d-inline-block
+									a(href="#").text-underline magrets de canard
+								li.d-inline-block
+									a(href="#").text-underline confitures de fraise
+								li.d-inline-block
+									a(href="#").text-underline tiramisu
+								li.d-inline-block
+									a(href="#").text-underline chocolat
+								li.d-inline-block
+									a(href="#").text-underline aubergines
+				.row.category
+					.col-md-2
+						h5 MOMENTS DU REPAS
+						.d-block
+							a(href="#").d-inline-block Apéritif, 
+							a(href="#").d-inline-block  Mise en bouche,
+							a(href="#").d-inline-block  Entrées ,
+							a(href="#").d-inline-block  Plats,
+							a(href="#").d-inline-block  Desserts
+					.col-md-2
+						h5 INGREDIENTS
+						.d-block
+							a(href="#").d-inline-block Viandes, 
+							a(href="#").d-inline-block  Poissons,
+							a(href="#").d-inline-block  Volailles,
+							a(href="#").d-inline-block  Légumes
+					.col-md-2
+						h5 PREPARATIONS
+						.d-block
+							a(href="#").d-inline-block Gâteaux, 
+							a(href="#").d-inline-block  Tartes,
+							a(href="#").d-inline-block  Gratins,
+							a(href="#").d-inline-block  Tajines,
+							a(href="#").d-inline-block  Confitures,
+							a(href="#").d-inline-block  Salades,
+							a(href="#").d-inline-block  Verrines
+					.col-md-2
+						h5 PAYS & REGIONS
+						.d-block
+							a(href="#").d-inline-block Italie,
+							a(href="#").d-inline-block Belgique,
+							a(href="#").d-inline-block France,
+							a(href="#").d-inline-block Maroc,
+							a(href="#").d-inline-block Thaîlande
+					.col-md-2
+						h5 EVENEMENTS & FETES
+						.d-block
+							a(href="#").d-inline-block Barbecue,
+							a(href="#").d-inline-block Pique nique,
+							a(href="#").d-inline-block Brunch
 

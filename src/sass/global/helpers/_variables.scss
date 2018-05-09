@@ -3,7 +3,7 @@
 //
 // Color system
 //
-$blue: #00bfe3;
+$blue: #1E87E8;
 $indigo:  #6610f2;
 $pink:    #d92988;
 $pink-dark: #a90c45;
@@ -30,6 +30,19 @@ $gray-700: #495057;
 $gray-800: $dark;
 $gray-middle: #EEEEEE;
 $black: #000;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 ;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$brand-primary:         darken(#428bca, 6.5%); // #337ab7
 
 $primary:       $blue;
 $secondary:     $gray-600;
@@ -121,7 +134,7 @@ $container-max-widths: (
 );
 
 $btn-border-radius:           0;
-$input-bg:									$gray;
+//$input-bg:									$gray;
 $input-border-radius:					0;
 $custom-select-border-radius:  0;
 
@@ -237,5 +250,13 @@ $container-lg:                 $container-large-desktop !default;
 }
 
 
+//=== Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      $white;
+$navbar-inverse-bg:                         $danger;
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%) ;
 
+// Inverted navbar links
+$navbar-inverse-link-color:                 $white;
+$navbar-inverse-link-hover-color:           darken($navbar-inverse-link-color, 15%);
 
