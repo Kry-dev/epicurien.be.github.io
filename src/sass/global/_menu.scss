@@ -1,0 +1,19 @@
+.navbar-nav{
+	@media (max-width: $screen-sm-max){
+		li a{
+			padding: 15px 10px;
+		}
+	}
+	@media (max-width: $screen-sm-min){
+		li a{
+			padding: 15px;
+		}
+	}
+	.nav-search{
+		width: 30%;
+		@media (max-width: $screen-sm-min){
+			padding: 10px 15px;
+			width: 100%;
+		}
+	}
+}
