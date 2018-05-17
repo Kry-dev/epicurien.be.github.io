@@ -7,11 +7,26 @@ html(lang="en")
 	include mixin/all-mixin
 	body
 		include global/header-aperitif
-		section
+		section.aperitif
 			.container
 				.row
-					.col-md-3
-					.col-md-8
+					.col-md-4.col-xs-12
+						a(href="#").banner.mb-3.hidden-sm.hidden-xs
+							img(src="https://loremflickr.com/g/450/350/paris")
+						.thumbnail.center.well.well-sm.bg-danger.mb-3
+							h2.text-white Inscrivez-vous à notre newsletter
+							p.text-white La dose gourmande hebodmadaire pour les amoureux du goût! Chaque semaine, découvrez des recettes
+								| garanties
+								| 100% plaisir et de saison!
+							form(action='', method='post', role='form')
+								.input-group
+									input.form-control(type='text', id='', name='', placeholder='votre email')
+									.input-group-btn
+										button.btn.btn-default(type='submit')
+											i.fa.fa-chevron-right
+						a(href="#").banner.mb-3.hidden-sm.hidden-xs
+							img(src="https://loremflickr.com/g/450/700/paris")
+					.col-md-8.col-xs-12
 						h1 Apéritifs et Accompagnement pour apéritif
 						p.introtexte
 							| 54 Idées originales de
@@ -57,5 +72,48 @@ html(lang="en")
 							a(href="#").thumbnail.thumbnail-blocrecipe
 								h4.mb-1.red Rillettes de céleri-rave aux pommes
 								p Par leur côté « sucré-salé », servez ces rillettes sur des petites galettes au beurre ; en guise de « mise en bouche » à l’heure de l’apéritif, par exemple.
+							// repeat articles
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Tomates au Roquefort
+								p Militons
+									| pour ne plus servir systématiquement les chips et les cacahuètes
+									| avec l'apéro. Nous pouvons proposer ces petites tomates si
+									| délicieusement farcies. Vous verrez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits Choux farcis au foie gras
+								p Un petit four sous la forme d’un petit chou délicieusement farci de foie gras à servir en guise
+									| d’apéritif et ou éventuellement
+									| comme mise en bouche. s. Vous verrez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Champignons farcis au fromage de chèvre au miel et fines herbes
+								p Ces champignons farcis sont un véritable délice que vous vous ferez un plaisir d’engloutir en guise d’amuse bouche à l’apéro. Cela accompagne à merveille les viandes rouges ou les plats en sauce au vin rouge.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Sauce yaourt au concombre
+								p Cette recette n'est jamais qu'une traduction pour l'apéritif de l'accompagnement grec Tsaziki duquel on
+									| a retiré l'ail afin. Je sais que les amateurs de concombre apprécieront beaucoup cette recettes.
+									| errez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Roulades de poivron au fromage ail et fines herbes
+								p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
 
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits fagots de foie gras en feuilles de magret fumé
+								p J’ai été totalement séduit par cette très jolie mise en bouche : de charmantes petites barres de foie gras en terrine, délicatement enroulées dans une tranche de magret fumé ; le tout lié par des petites ficelles faites de brins de ciboulette. Un ravissement pour les yeux et pour la bouche !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits toasts aux échalotes confites
+								p De jolis petits amuse-gueule à servir avec l’apéritif. Présentez-les avec d’autres préparations, comme des toasts à la moelle ou aux champignons.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Anchois marinés (cuisine basque)
+								p Une préparation très typique du pays basque et succulente à servir sur un lit de roquette fraîche ou encore avec une salade de chicons (endives) crus.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Rillettes de céleri-rave aux pommes
+								p Par leur côté « sucré-salé », servez ces rillettes sur des petites galettes au beurre ; en guise de « mise en bouche » à l’heure de l’apéritif, par exemple.
+				.row
+					.col-md-12.hidden-sm.hidden-xs
+						a(href="#").banner.mb-3
+							img(src="https://loremflickr.com/g/1920/350/paris")
+		include global/footer-aperitif
 
