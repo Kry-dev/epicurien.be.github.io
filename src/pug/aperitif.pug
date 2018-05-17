@@ -7,252 +7,55 @@ html(lang="en")
 	include mixin/all-mixin
 	body
 		include global/header-aperitif
-		section.search.mb-3
+		section
 			.container
 				.row
-					.col-md-12
-						form
-							.input-group
-								input.form-control(type='text',  placeholder='Je cherche ...')
-								span.input-group-btn
-									button.btn.btn-default.bg-danger(type='button')
-										i.fa.fa-chevron-right.text-white
-							ul.d-block
-								li.d-inline-block
-									a(href="#").text-underline panna cotta
-								li.d-inline-block
-									a(href="#").text-underline magrets de canard
-								li.d-inline-block
-									a(href="#").text-underline confitures de fraise
-								li.d-inline-block
-									a(href="#").text-underline tiramisu
-								li.d-inline-block
-									a(href="#").text-underline chocolat
-								li.d-inline-block
-									a(href="#").text-underline aubergines
-				.row.category
-					.col-md-2
-						h5 MOMENTS DU REPAS
-						.d-block
-							a(href="#").d-inline-block Apéritif, 
-							a(href="#").d-inline-block  Mise en bouche,
-							a(href="#").d-inline-block  Entrées ,
-							a(href="#").d-inline-block  Plats,
-							a(href="#").d-inline-block  Desserts
-					.col-md-2
-						h5 INGREDIENTS
-						.d-block
-							a(href="#").d-inline-block Viandes, 
-							a(href="#").d-inline-block  Poissons,
-							a(href="#").d-inline-block  Volailles,
-							a(href="#").d-inline-block  Légumes
-					.col-md-2
-						h5 PREPARATIONS
-						.d-block
-							a(href="#").d-inline-block Gâteaux, 
-							a(href="#").d-inline-block  Tartes,
-							a(href="#").d-inline-block  Gratins,
-							a(href="#").d-inline-block  Tajines,
-							a(href="#").d-inline-block  Confitures,
-							a(href="#").d-inline-block  Salades,
-							a(href="#").d-inline-block  Verrines
-					.col-md-2
-						h5 PAYS & REGIONS
-						.d-block
-							a(href="#").d-inline-block Italie,
-							a(href="#").d-inline-block Belgique,
-							a(href="#").d-inline-block France,
-							a(href="#").d-inline-block Maroc,
-							a(href="#").d-inline-block Thaîlande
-					.col-md-2
-						h5 EVENEMENTS & FETES
-						.d-block
-							a(href="#").d-inline-block Barbecue,
-							a(href="#").d-inline-block Pique nique,
-							a(href="#").d-inline-block Brunch
-		section.banners
-			.container
-				.row
-					.col-xs-12
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/crepes-pancake-chandeleurs.jpg', alt='...')
-				.row
-					.col-xs-12
-						h2 Quelques idées pour les fêtes
-				.row
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/escalope_foie_gras_saint_jacques-500.jpg', alt='...')
-							h4 Saint jacques au foie gras
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/mousse_chocolat_facile.jpg', alt='...')
-							h4 Mousse au chocolat facile
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/poire_pochee_vin_rouge_epice.jpg', alt='...')
-							h4 Poires pochées au vin rouge et aux épices
+					.col-md-3
+					.col-md-8
+						h1 Apéritifs et Accompagnement pour apéritif
+						p.introtexte
+							| 54 Idées originales de
+							a(href='#')  recettes pour l'apéritif
+							|  et
+							a(href='#')  accompagnement pour apéritif
+						section.blocrecipe
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Tomates au Roquefort
+								p Militons
+									| pour ne plus servir systématiquement les chips et les cacahuètes
+									| avec l'apéro. Nous pouvons proposer ces petites tomates si
+									| délicieusement farcies. Vous verrez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits Choux farcis au foie gras
+								p Un petit four sous la forme d’un petit chou délicieusement farci de foie gras à servir en guise
+									| d’apéritif et ou éventuellement
+									| comme mise en bouche. s. Vous verrez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Champignons farcis au fromage de chèvre au miel et fines herbes
+								p Ces champignons farcis sont un véritable délice que vous vous ferez un plaisir d’engloutir en guise d’amuse bouche à l’apéro. Cela accompagne à merveille les viandes rouges ou les plats en sauce au vin rouge.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Sauce yaourt au concombre
+								p Cette recette n'est jamais qu'une traduction pour l'apéritif de l'accompagnement grec Tsaziki duquel on
+									| a retiré l'ail afin. Je sais que les amateurs de concombre apprécieront beaucoup cette recettes.
+									| errez à quel vitesse le
+									| plateau sera vidé !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Roulades de poivron au fromage ail et fines herbes
+								p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
 
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/salade_perigourdine.jpg', alt='...')
-							h4 Salade périgourdine
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/risotto_cepe.jpg', alt='...')
-							h4 Risotto aux cèpes et mascarpone
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/tatin_foie_gras_magret_canard.jpg', alt='...')
-							h4 Tatin de foie gras au magret de canard
-
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/magret_canard_figue_the_noir.jpg', alt='...')
-							h4 Magret de canard aux figues parfumé au thé noir
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/magret_canard_miel_poivre_sichuan.jpg', alt='...')
-							h4 Magrets de canard laqués au miel aux épices et poivre de Sichuan
-
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/noix_saint_jacques_champignon.jpg', alt='...')
-							h4 Noix de Saint-Jacques aux champignons
-
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/pain_epice.jpg', alt='...')
-							h4 Pain d’épices moelleux
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/poulet_morilles.jpg', alt='...')
-							h4 Poularde de Bresse au vin jaune et morilles
-					.col-md-4.col-sm-6
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/brochette_saint_jacques_citron_romarin.jpg', alt='...')
-							h4 Brochettes de noix de saint Jacques au romarin et citron
-				.row
-					.col-sm-6.col-xs-12
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-02-desserts-noel.jpg', alt='...')
-					.col-sm-3.col-xs-6.pr-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-03-langoustines.jpg', alt='...')
-					.col-sm-3.col-xs-6.pl-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-04-vins-chauds.jpg', alt='...')
-				.row
-					.col-sm-6.col-xs-12
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-05-caviar.jpg', alt='...')
-					.col-sm-3.col-xs-6.pr-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-06-huitres.jpg', alt='...')
-					.col-sm-3.col-xs-6.pl-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-07-volailles.jpg', alt='...')
-
-				.row
-					.col-sm-3.col-xs-6.pr-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-09-homard.jpg', alt='...')
-					.col-sm-3.col-xs-6.pl-lg-0
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-08-saumon.jpg', alt='...')
-					.col-sm-6.col-xs-12
-						a.thumbnail(href='#')
-							img(src='assets/img/homepage/baner-10-saint-jacques.jpg', alt='...')
-				hr
-		section.blocrecipe
-			.container
-				.row
-					.col-md-3.col-sm-6
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Confiture de cerise
-							p De toutes les confitures classiques c’est peut-être la plus « gouteuse », et comme il existe
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Panna cotta au coulis de framboise (panacotta)
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Tiramisu aux spéculoos
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-					.col-md-3.col-sm-6
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Panna cotta au coulis de framboise (panacotta)
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Confiture de cerise
-							p De toutes les confitures classiques c’est peut-être la plus « gouteuse », et comme il existe
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Tiramisu aux spéculoos
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-					.col-md-3.col-sm-6
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Confiture de cerise
-							p De toutes les confitures classiques c’est peut-être la plus « gouteuse », et comme il existe
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Confiture de cerise
-							p De toutes les confitures classiques c’est peut-être la plus « gouteuse », et comme il existe
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Tiramisu aux spéculoos
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-					.col-md-3.col-sm-6
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Confiture de cerise
-							p De toutes les confitures classiques c’est peut-être la plus « gouteuse », et comme il existe
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Panna cotta au coulis de framboise (panacotta)
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Tiramisu aux spéculoos
-							img(src="https://lorempixel.com/400/200/food/")
-						hr
-						a(href="#").thumbnail.thumbnail-blocrecipe
-							h4.mb-1 Salade de rhubarbe grillée, fraises et ananas
-							p Une autre manière de cuisiner la rhubarbe, en dés bien croustillants qui se marient avec la douceur
-						hr
-
-
-
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits fagots de foie gras en feuilles de magret fumé
+								p J’ai été totalement séduit par cette très jolie mise en bouche : de charmantes petites barres de foie gras en terrine, délicatement enroulées dans une tranche de magret fumé ; le tout lié par des petites ficelles faites de brins de ciboulette. Un ravissement pour les yeux et pour la bouche !
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Petits toasts aux échalotes confites
+								p De jolis petits amuse-gueule à servir avec l’apéritif. Présentez-les avec d’autres préparations, comme des toasts à la moelle ou aux champignons.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Anchois marinés (cuisine basque)
+								p Une préparation très typique du pays basque et succulente à servir sur un lit de roquette fraîche ou encore avec une salade de chicons (endives) crus.
+							a(href="#").thumbnail.thumbnail-blocrecipe
+								h4.mb-1.red Rillettes de céleri-rave aux pommes
+								p Par leur côté « sucré-salé », servez ces rillettes sur des petites galettes au beurre ; en guise de « mise en bouche » à l’heure de l’apéritif, par exemple.
 
 

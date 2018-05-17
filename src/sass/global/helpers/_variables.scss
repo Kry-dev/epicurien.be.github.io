@@ -63,19 +63,19 @@ $brand-info:            $info;
 $brand-warning:         $warning;
 $brand-danger:          $danger;
 
-.blue       {color:$blue;}
-.indigo     {color:$indigo;}
-.pink       {color:$pink;}
-.red        {color:$red;}
-.orange     {color:$orange;}
-.yellow     {color:$yellow;}
-.green      {color:$green;}
-.teal       {color:$teal;}
-.cyan       {color:$cyan;}
-.white      {color:$white;}
-.gray       {color:$gray-600;}
-.gray-dark  {color:$gray-800;}
-.black   		{color:$black;}
+.blue       {color:$blue !important; }
+.indigo     {color:$indigo !important; }
+.pink       {color:$pink !important; }
+.red        {color:$red !important; }
+.orange     {color:$orange !important; }
+.yellow     {color:$yellow !important; }
+.green      {color:$green !important; }
+.teal       {color:$teal !important; }
+.cyan       {color:$cyan !important; }
+.white      {color:$white !important; }
+.gray       {color:$gray-600 !important; }
+.gray-dark  {color:$gray-800 !important; }
+.black   		{color:$black !important; }
 
 .bg-gray				{background-color: $gray !important; }
 .bg-blue        {background-color:$blue !important; }
