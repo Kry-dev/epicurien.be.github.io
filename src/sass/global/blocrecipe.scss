@@ -1,0 +1,33 @@
+.blocrecipe{
+	.row{
+		hr{
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	a.thumbnail.thumbnail-blocrecipe{
+		text-decoration: none;
+		border-radius: 0;
+		h4{
+			color: $primary;
+			min-height: inherit;
+
+		}
+		p{
+			color: $gray-dark;
+		}
+		&:hover,
+		&:focus{
+			text-decoration: none;
+			cursor: pointer;
+			background: rgba(0,0,0,.1);
+		}
+		@media (max-width: $screen-sm-min){
+			text-align: center;
+			h4,
+			p{
+				text-align: center;
+			}
+		}
+	}
+}
