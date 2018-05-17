@@ -1,0 +1,19 @@
+.btn-combi{
+	background: rgba($white, .1);
+	color: $white;
+	text-align: left;
+	white-space: pre-wrap;
+	position: relative;
+	padding-left: 30px;
+	.fa{
+		position: absolute;
+		left: 10px;
+		top: 8px;
+		margin-right: 10px;
+	}
+	&:hover,
+	&:focus{
+		background: rgba($green, .7);
+		color: $white;
+	}
+}

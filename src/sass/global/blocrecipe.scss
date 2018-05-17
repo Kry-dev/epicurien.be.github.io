@@ -30,4 +30,43 @@
 			}
 		}
 	}
+	a.thumbnail.thumbnail-aperitif{
+		text-decoration: none;
+		border-radius: 0;
+		border-bottom: 1px solid  $gray-dark;
+		margin-bottom: 1rem;
+		background: rgba(0,0,0,.05);
+		position: relative;
+		.fa{
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			display: none;
+			color: $green;
+		}
+		h4{
+			color: $gray-dark;
+			min-height: inherit;
+
+		}
+		p{
+			color: $gray-dark;
+		}
+		&:hover,
+		&:focus{
+			text-decoration: none;
+			cursor: pointer;
+			background: rgba($green, .1);
+			.fa{
+				display: block;
+			}
+		}
+		@media (max-width: $screen-sm-min){
+			text-align: center;
+			h4,
+			p{
+				text-align: center;
+			}
+		}
+	}
 }
