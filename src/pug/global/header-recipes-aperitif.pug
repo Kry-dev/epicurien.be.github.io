@@ -1,0 +1,28 @@
+header.header
+	nav.navbar.mb-0
+		nav.navbar.navbar-default.mb-0
+			.container
+				// Brand and toggle get grouped for better mobile display
+				.navbar-header
+					button.navbar-toggle(type='button', data-target='#navbarCollapse', data-toggle='collapse')
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand.text-uppercase.red(href='/') Epicurien
+				#navbarCollapse.collapse.navbar-collapse
+					ul.nav.navbar-nav
+						li
+							a(href='#') Toutes Les Recettes
+					ul.nav.navbar-nav.navbar-right
+						li.nav-search.w-100
+							form.navbar-form(role='search')
+								.input-group
+									input.form-control(type='text', placeholder='recherchez', name='q')
+									.input-group-btn
+										button.btn.btn-default.bg-danger(type='submit')
+											i.fa.fa-chevron-right.text-white
+
+
+
+

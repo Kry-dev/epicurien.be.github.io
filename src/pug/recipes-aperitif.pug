@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+	include global/head
+	+head(
+		'Apéritifs : les meilleures Recettes pour lapéritif '
+	)
+	include mixin/all-mixin
+	body
+		include global/header-recipes-aperitif
+		section.combikeyMap.bg-gray.py-3
+			.container
+				.row.p-3
+					.col-md-12.hidden-sm.hidden-xs
+						a(href="#").banner.mb-3
+							img(src="https://loremflickr.com/g/1920/350/paris")
+				.row
+					h1.text-white.text-center Recettes pour l'apéritif
+				.row
+					.col-md-3
+						h4.text-white.text-center Dans un menu
+
+
+		include global/footer-aperitif
+

@@ -10,7 +10,7 @@ $(document).ready(function(){
         }
         if($(window).scrollTop() + $(window).height() < $(document).height() - $("#footer").height()) {
             $('#toTop').css("position","fixed");    //resetting it
-            $('#toTop').css("bottom","0"); //resetting it
+            $('#toTop').css("bottom","20"); //resetting it
         }
     });
 
