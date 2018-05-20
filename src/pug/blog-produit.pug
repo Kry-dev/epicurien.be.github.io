@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+html(lang="en")
+	include global/head
+	+head(
+		'Dernière ligne droite pour profiter des moules de Zélande'
+	)
+	include mixin/all-mixin
+	body
+		include global/header-aperitif
+		section.blog
+			.container
+				.row
+					.col-md-12
+						ol.breadcrumb.mb-0
+							li
+								a(href='#') Accueil
+							li.active
+								a(href='#') Blog epicurien.be
+				hr.my-1
+				.row
+					// Post Content Column
+					.col-lg-9
+						// Title
+						h1.mt-4 Dernière ligne droite pour profiter des moules de Zélande
+						// Author
+						p.lead
+							| La saison des moules de Zélande arrive à son terme. Pour en profiter dignement jusqu’à la fin, découvrez ces quelques créations de Patrick Vandecasserie de chez De Mayeur à Ruysbroek.
+
+						hr
+						// Date/Time
+						p publié le 16.03.2014 by
+							a(href="#")  Laurent Goffin
+						hr
+						p La saison des moules de Zélande se termine fin mars, début avril et donc, plus que 2 ou 3 semaines pour en
+							| profiter. Il faudra attendre juillet et août pour les voir réapparaître dans nos assiettes.
+						p Afin de progfiter au mieux ces derniers moments, j’ai été invité à un atelier culinaire autour de ce produit
+							| avec Patrick vandecasserie.
+						p Patrick Vandecasserie est le digne descendant de Freddy Vandecasserie qui a fait les beaux jours de la
+							a(href="http://www.villalorraine.be/")  Villa Lorraine
+							|  au temps de ses 3 macarons.
+						p Il officie désormais dans son propre restaurant
+							a(href="http://www.demayeur.be/")  De Mayeur
+							|  à Ruisbroeck. Pour l’avoir pratiqué quelques fois, on
+							| y goûte une cuisine classique qui ose encore abuser de la crème et du beurre. Ca fait un bien dingue de
+							| temps en temps de revisiter une cuisine classique réalisée dans les règles de l’art, une cuisine bourgeoise
+							| pas intello pour un sous.
+						p L’adresse vaut le détour en ce début de printemps car le chef maîtrise à merveille côte de veau, morilles et
+							| asperges. Je me souviens d’un velouté glacé aux asperges blanches à mourir !
+						p Revenons à nos moules … Le chef qui maîtrise à merveille les produits classiques de la cuisine belge nous a
+							| fait découvrir ses creations. Il a voulu nous faire profiter de la fin de la saison avec autre chose que nos
+							a(href="casseroles de moules")  classique de moules
+							|  . Et oui, il y autre chose que les moules marinières, moules à la crème ou
+							| autre moules à la provençale qui sont aux moules que le terme exotique est à la pizza, bref une horreur ;-)
+						p.lead Voici les créations de Patrick Vandecasserie pour vous faire saliver.
+						#myCarousel.carousel.slide(data-ride='carousel')
+							// Indicators
+							ol.carousel-indicators
+								li.active(data-target='#myCarousel', data-slide-to='0')
+								li(data-target='#myCarousel', data-slide-to='1')
+								li(data-target='#myCarousel', data-slide-to='2')
+								li(data-target='#myCarousel', data-slide-to='3')
+								li(data-target='#myCarousel', data-slide-to='4')
+								li(data-target='#myCarousel', data-slide-to='5')
+								li(data-target='#myCarousel', data-slide-to='6')
+							// Wrapper for slides
+							.carousel-inner
+								.item.active
+									img(src='assets/img/blog-produit/blog-produit-01.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-03.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-04.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-05.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-06.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-07.jpg', alt='')
+								.item
+									img(src='assets/img/blog-produit/blog-produit-08.jpg', alt='')
+							// Left and right controls
+							a.left.carousel-control(href='#myCarousel', data-slide='prev')
+								span.glyphicon.glyphicon-chevron-left
+								span.sr-only Previous
+							a.right.carousel-control(href='#myCarousel', data-slide='next')
+								span.glyphicon.glyphicon-chevron-right
+								span.sr-only Next
+						br
+						hr
+						// Post Content
+						p.lead 3 des 4 préparations du jour. De Gauche à droite :
+						ul.pl-3.mb-3
+							li une gelée de moules de Zélandre à coriandre, Yuzu et salicorne
+							li une écrasé de Bintje, crème aigre et moules de Zélande crues aux fines herbes
+							li un cappuccino de Moules de Zélande, curry au lait de coco
+
+						p Bientôt les recettes sur epicurien
+						p.lead  En attendant, voici quelques unes des
+							a(href="#")  meilleures recettes de moules
+							|  sur Epicurien :
+						ul.pl-3.mb-3
+							li
+								a(href="#") Moules à la chermoula:
+								|  la chermoula est une sauce tomatée au citron confit d'origine marocaine.
+								| Elle s'accorde à merveille avec les moules.
+							li
+								a Moules au basilic Thaï
+							li
+								a Moules marinières nature
+							li
+								a Paella aux coquillages
+							li
+								a Moules à la bière blanche
+
+
+						p.lead A lire aussi :
+						ul.pl-3.mb-3
+							li
+								a Les moules façon Patrick Vandecasserie
+							li
+								a Gelée de moules de Zélande - coriandre - ponzu - salicornes
+						p.lead Découvrez les blogueurs de cuisine présent à l'événement
+						ul.pl-3.mb-3
+							li
+								a Loftkitchen
+							li
+								a Cook'n'Roll
+							li
+								a Soupçon de Balsamique
+							li
+								a La DInette des Grandes
+							li
+								a Mi'Dinettes
+					// Sidebar Widgets Column
+					.col-md-3
+						a(href="#").thumbnail.thumbnail-blocrecipe
+							img(src="https://loremflickr.com/g/450/350/food")
+							h4.mb-1.text-bold Roulades de poivron au fromage ail et fines herbes
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+						hr
+						a(href="#").thumbnail.thumbnail-blocrecipe
+							img(src="https://loremflickr.com/g/450/350/food")
+							h4.mb-1.text-bold Roulades de poivron au fromage ail et fines herbes
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+						hr
+						a(href="#").thumbnail.thumbnail-blocrecipe
+							img(src="https://loremflickr.com/g/450/350/food")
+							h4.mb-1.text-bold Roulades de poivron au fromage ail et fines herbes
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+						hr
+						a(href="#").thumbnail.thumbnail-blocrecipe
+							img(src="https://loremflickr.com/g/450/350/food")
+							h4.mb-1.text-bold Roulades de poivron au fromage ail et fines herbes
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+						hr
+						a(href="#").thumbnail.thumbnail-blocrecipe
+							img(src="https://loremflickr.com/g/450/350/food")
+							h4.mb-1.text-bold Roulades de poivron au fromage ail et fines herbes
+							p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
+						hr
+			#myModal.modal(role='dialog')
+				.modal-dialog
+					.modal-content
+						.modal-header
+							button.close(type='button', data-dismiss='modal') ×
+							h3.modal-title
+						.modal-body
+							#modalCarousel.carousel
+								.carousel-inner
+								a.carousel-control.left(href='#modaCarousel', data-slide='prev')
+									i.glyphicon.glyphicon-chevron-left
+								a.carousel-control.right(href='#modalCarousel', data-slide='next')
+									i.glyphicon.glyphicon-chevron-right
+						.modal-footer
+							button.btn.btn-default(data-dismiss='modal') Close
+		include global/footer-aperitif
+
