@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+html(lang="en")
+	include global/head
+	+head(
+		"Bière Abbaye d'Aulne 'Superbe' - Belgique - Opwijk - Epicurien.be"
+	)
+	include mixin/all-mixin
+	body
+		include global/header-aperitif
+		section.bier
+			.container
+				.row
+					.col-md-12
+						ol.breadcrumb.mb-0
+							li
+								a(href='#') Accueil
+							li
+								a(href='#') Le monde de la bière
+							li.active
+								a(href='#') Abbaye d'Aulne 'Superbe'
+				hr.my-1
+				.row
+					.col-md-4.col-sm-12.bg-light
+						include global/filter-sidebar
+
+					.col-md-8.col-sm-12
+						.d-block.clearfix.pt-3
+							a.previous.pull-left(href='#') « Bière Précédente
+							a.next.pull-right(href='#') Bière Suivante »
+
+						// Title
+						h1.mt-4 Abbaye d'Aulne 'Superbe'
+						// Author
+						p.lead
+							| Abbaye d'aulne. Bière forte et sucrée, mais peu épicée. Filtrée.
+						.table-responsive
+							table.table.table-bordered
+								tbody
+									tr(valign='top')
+										td.title1(colspan='5') Origines
+									tr(valign='top')
+										td(width='100')
+											strong Pays
+										td(width='145') Belgique
+										td(width='100')
+											strong Vile
+										td(width='145') Opwijk
+									tr(valign='top')
+										td
+											strong Brasserie
+										td(colspan='4') De smedt
+									tr(valign='top')
+										td(colspan='5')  
+									tr(valign='top')
+										td.title1(colspan='5') Caractéristiques
+									tr(valign='top')
+										td(colspan='2')
+											strong Type de bière
+										td(colspan='2') Abbaye
+									tr(valign='top')
+										td(colspan='2')
+											strong Type de fermentation
+										td  
+										td(colspan='2') haute
+									tr(valign='top')
+										td(colspan='2')
+											strong Type de bouteille
+										td  
+										td(colspan='2') 33 cl
+									tr(valign='top')
+										td(colspan='5')  
+									tr(valign='top')
+										td.title1(colspan='5') Notes
+									tr(valign='top')
+										td(colspan='5')
+											| Abbaye  rouge foncée, cristalline, bien  saturée  en bulles moyennes. Mousse beige claire fine, de durée moyenne. Arôme puissant et caramélisé aux tons liquoreux très riches. Saveur puissante et sucrée, bien maltée, peu amère et faiblement épicée et âcre Flandres, typée et capiteuse.
+									tr(valign='top', align='right')
+										td(colspan='5')
+											| © Cyril Pagniez -
+											a(href='http://www.trappistbeer.net', target='_blank') trappistbeer.net
+
+
+
+						hr
+						// Comments Form
+						.card.my-4
+							h3.card-header Votre avis sur cette bière ...?
+							p Partagez avec nous votre point de vue sur cette bière
+							.card-body
+								form
+									.row
+										.col-md-6
+											.form-group
+												label(for='email') Votre Nom:
+													span.red *
+												input#email.form-control(type='email', required)
+										.col-md-6
+											p Les champs marqués d'un * sont obligatoires
+
+									.row
+										.col-sm-6
+											.form-group
+												label(for='pwd') Votre email:
+													span.red *
+												input#pwd.form-control(type='password', required)
+											.form-group
+												label(for='url-site') Votre site:
+												input#url-site.form-control(type='text', placeholder="https://...")
+										.col-sm-6
+											p Afin d'éviter tout risque de spam, votre email ne sera en encun cas affiché sur le site.
+									.row
+										.col-sm-12
+											.form-group
+												label(for="message") Votre commentaire
+													span.red *
+												textarea#message.form-control(rows='3', required)
+									.row
+										.form-group.pull-right
+											button.btn.btn-primary(type='submit') Submit
+						// Single Comment
+						.media.mb-4
+							.media-heading.clearfix
+								.d-inline-block.pull-left
+									img.d-block.rounded-circle.mr-3(src='http://placehold.it/50x50', alt='')
+								.d-inline-block.pull-left
+									h5.mt-0 Commenter Name
+									p 22 10 2005 - 11:39
+							.media-body
+								p
+									| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+									| t nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio,
+									| vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+									| fringilla. Donec lacinia congue felis in faucibus.
+						// Comment with nested comments
+						.media.mb-4
+							.media-heading.clearfix
+								.d-inline-block.pull-left
+									img.d-block.rounded-circle.mr-3(src='http://placehold.it/50x50', alt='')
+								.d-inline-block.pull-left
+									h5.mt-0 Commenter Name
+									p 22 10 2005 - 11:39
+							.media-body
+								p
+									| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								.media.mt-4
+									.media-heading.clearfix
+										.d-inline-block.pull-left
+											img.d-block.rounded-circle.mr-3(src='http://placehold.it/50x50', alt='')
+										.d-inline-block.pull-left
+											h5.mt-0 Commenter Name
+											p 22 10 2005 - 11:39
+									.media-body
+										p
+											| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+								.media.mt-4
+									.media-heading.clearfix
+										.d-inline-block.pull-left
+											img.d-block.rounded-circle.mr-3(src='http://placehold.it/50x50', alt='')
+										.d-inline-block.pull-left
+											h5.mt-0 Commenter Name
+											p 22 10 2005 - 11:39
+									.media-body
+										p
+											| Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+
+		include global/footer-aperitif
+

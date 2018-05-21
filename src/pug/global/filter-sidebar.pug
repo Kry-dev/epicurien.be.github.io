@@ -1,0 +1,49 @@
+#accordionMenu.panel-group(role='tablist', aria-multiselectable='true')
+    h3
+        a(href="#") Le monde de la bière
+    .panel.panel-default
+        #headingOne.panel-heading(role='tab')
+            h4.panel-title
+                a(role='button', data-toggle='collapse', data-parent='#accordionMenu', href='#collapseOne', aria-expanded='true', aria-controls='collapseOne')
+                    | Les bières par nom
+        #collapseOne.panel-collapse.collapse.in(role='tabpanel', aria-labelledby='headingOne')
+            .panel-body
+                ul.nav
+                    li
+                        a(href='#') item 1
+                    li
+                        a(href='#') item 2
+                    li
+                        a(href='#') item 3
+    .panel.panel-default
+        #headingTwo.panel-heading(role='tab')
+            h4.panel-title
+                a.collapsed(role='button', data-toggle='collapse', data-parent='#accordionMenu', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                    | index alphabétique
+        #collapseTwo.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingTwo')
+            .panel-body
+                ul.nav
+                    li
+                        a(href='#') item 1
+                    li
+                        a(href='#') item 2
+                    li
+                        a(href='#') item 3
+                    li
+                        a(href='#') item 4
+    .panel.panel-default
+        #headingThree.panel-heading(role='tab')
+            h4.panel-title
+                a.collapsed(role='button', data-toggle='collapse', data-parent='#accordionMenu', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                    | index chronologique
+        #collapseThree.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingThree')
+            .panel-body
+                ul.nav
+                    li
+                        a(href='#') item 1
+                    li
+                        a(href='#') item 2
+                    li
+                        a(href='#') item 3
+                    li
+                        a(href='#') item 4
