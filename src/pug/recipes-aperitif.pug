@@ -6,7 +6,7 @@ html(lang="en")
 	)
 	include mixin/all-mixin
 	body
-		include global/header-recipes-aperitif
+		include global/header
 		section.combikeyMap.bg-gray.py-3
 			.container
 				.row.p-3
@@ -174,5 +174,20 @@ html(lang="en")
 					.col-md-4.col-xs-12
 						a(href="#").banner.mb-3.hidden-sm.hidden-xs
 							img(src="https://loremflickr.com/g/450/700/paris")
+						p 210 Recettes pour l'apéritif pour réaliser des accompagnement pour apéritif, amuses bouche, boisson, cocktail
+							|  et amuse gueule à base de fromage, rhum, alcool, foie gras et citron
+						.d-block.clearfix
+							.d-inline-block.vtop
+								a.btn.btn-block.btn-social.btn-facebook
+									i.fa.fa-facebook
+									| Partager
+									span.badge 12
+							.d-inline-block.vtop
+								.c-rating
+									.c-rating__badge 4.0
+									.c-rating__display(aria-hidden="true")
+										span.c-rating__stars.c-rating__stars--background
+										span.c-rating__stars(style="width: calc(100% * (4.0 / 5))")
+									a.c-rating__count(href="#") (35 avis)
 		include global/footer-aperitif
 

@@ -93,3 +93,18 @@ article{
 		color: inherit;
 	}
 }
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+.vtop {
+	display: inline-block;
+	vertical-align: top;
+	float: none;
+}
+.vbottom {
+	display: inline-block;
+	vertical-align: bottom;
+	float: none;
+}

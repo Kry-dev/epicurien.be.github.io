@@ -1,4 +1,7 @@
 .navbar-nav{
+	li{
+		border-bottom: 0;
+	}
 	@media (max-width: $screen-sm-max){
 		li a{
 			padding: 15px 10px;
