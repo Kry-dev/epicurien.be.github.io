@@ -11,7 +11,7 @@ html(lang="en")
 			.container
 				.row
 					.col-md-4.col-xs-12
-						a(href="#").banner.mb-3.hidden-sm.hidden-xs
+						a(href="#").banner.my-3.hidden-sm.hidden-xs
 							img(src="https://loremflickr.com/g/450/350/paris")
 						.thumbnail.center.well.well-sm.bg-danger.mb-3
 							h2.text-white Inscrivez-vous à notre newsletter
@@ -111,9 +111,21 @@ html(lang="en")
 							a(href="#").thumbnail.thumbnail-blocrecipe
 								h4.mb-1.red Rillettes de céleri-rave aux pommes
 								p Par leur côté « sucré-salé », servez ces rillettes sur des petites galettes au beurre ; en guise de « mise en bouche » à l’heure de l’apéritif, par exemple.
+						.thumbnail.center.well.well-sm.bg-danger.mb-3
+							h2.text-white Inscrivez-vous à notre newsletter
+							p.text-white La dose gourmande hebodmadaire pour les amoureux du goût! Chaque semaine, découvrez des recettes
+								| garanties
+								| 100% plaisir et de saison!
+							form(action='', method='post', role='form')
+								.input-group
+									input.form-control(type='text', id='', name='', placeholder='votre email')
+									.input-group-btn
+										button.btn.btn-default(type='submit')
+											i.fa.fa-chevron-right
 				.row
 					.col-md-12.hidden-sm.hidden-xs
 						a(href="#").banner.mb-3
 							img(src="https://loremflickr.com/g/1920/350/paris")
+
 		include global/footer-aperitif
 

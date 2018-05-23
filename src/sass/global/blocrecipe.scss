@@ -22,18 +22,11 @@
 			cursor: pointer;
 			background: rgba(0,0,0,.1);
 		}
-		@media (max-width: $screen-sm-min){
-			text-align: center;
-			h4,
-			p{
-				text-align: center;
-			}
-		}
 	}
 	a.thumbnail.thumbnail-aperitif{
 		text-decoration: none;
 		border-radius: 0;
-		border-bottom: 1px solid  $gray-dark;
+		border-bottom: 1px solid  $black;
 		margin-bottom: 1rem;
 		background: rgba(0,0,0,.05);
 		position: relative;
@@ -59,13 +52,6 @@
 			background: rgba($green, .1);
 			.fa{
 				display: block;
-			}
-		}
-		@media (max-width: $screen-sm-min){
-			text-align: center;
-			h4,
-			p{
-				text-align: center;
 			}
 		}
 	}

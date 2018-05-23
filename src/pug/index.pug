@@ -10,8 +10,8 @@ html(lang="en")
 		section.search.mb-3
 			.container
 				.row
-					.banner.mb-3.hidden-sm.hidden-xs
-						img(src="https://loremflickr.com/g/1920/350/paris")
+					.banner.my-3.hidden-sm.hidden-xs
+						img(src="https://loremflickr.com/g/1920/400/food")
 				.row
 					.col-md-12
 						form
@@ -75,6 +75,10 @@ html(lang="en")
 							a(href="#").d-inline-block Brunch
 		section.banners
 			.container
+				.row
+					hr
+					include global/socials
+					hr
 				.row
 					.col-xs-12
 						a.thumbnail(href='#')
@@ -316,6 +320,11 @@ html(lang="en")
 								.caption.post-content
 									h5 Lorem ispum 6
 
+		section
+			.container
+				hr
+				include global/socials
+				hr
 		include global/footer-aperitif
 
 
