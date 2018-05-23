@@ -1,0 +1,30 @@
+.glossary{
+	.alphabet{
+		ul,li{
+			list-style: none;
+		}
+	}
+	ul.dictionary{
+		padding: 1rem;
+		background: $white;
+		list-style: none;
+		border: 1px solid $secondary;
+		border-radius: $border-radius-base;
+		margin-bottom: 1rem;
+		li {
+			float:none;
+			display:block;
+			a{
+				display: block;
+				width: 100%;
+				position: relative;
+				&:before{
+					content: "\f105";
+					font-family: FontAwesome;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+

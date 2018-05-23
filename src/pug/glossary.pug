@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+html(lang="en")
+	include global/head
+	+head(
+		"Glossaire des recettes"
+	)
+	include mixin/all-mixin
+	body
+		include global/header-aperitif
+		section.glossary
+			.container
+				.row
+					.col-md-12
+						ol.breadcrumb.mb-0
+							li
+								a(href='#') Accueil
+							li
+								a(href='#') Recettes
+							li.active
+								a(href='#') Glossaire des recettes
+				hr.my-1
+				.row
+					.col-md-3.col-sm-12.bg-light
+						h3
+							a(href="#") Toutes nos recettes
+						include global/filter-sidebar
+
+					.col-md-9.col-sm-12
+
+						// Title
+						h1.mt-4 Glossaire des recettes
+						// Author
+						p.lead
+							| Trouvez ici les types de préparations, types de plats, ingrédients et origines de toutes les recettes proposées
+
+						include global/alphabet
+	script(src="assets/js/alphabet.js")
+
+	include global/footer-aperitif
+
