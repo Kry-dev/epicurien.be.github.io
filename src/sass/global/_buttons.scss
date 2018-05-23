@@ -17,3 +17,9 @@
 		color: $white;
 	}
 }
+.nav> li >.btn-social{
+	padding: 10px 15px 10px 40px;
+}
+.btn-social>:first-child, .btn-social-icon>:first-child{
+	top: 2px;
+}

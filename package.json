@@ -35,6 +35,7 @@
     "webpack": "^3.5.5"
   },
   "dependencies": {
+    "bootstrap-social": "^5.1.1",
     "jquery": "^1.9.1"
   }
 }
