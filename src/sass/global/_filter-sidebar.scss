@@ -66,9 +66,24 @@
 .panel-primary{
 	border-color: transparent;
 	box-shadow: none;
+	color: $primary !important;
+	.panel-heading > .panel-title > a{
+		width: 100%;
+		display: block;
+		&:hover,
+		&:focus{
+			color: white;
+			text-decoration: underline;
+		}
+	}
 	.panel-body{
 		li a{
-			color: $primary;
+			color: $primary !important;
+			&:hover,
+			&:focus{
+				color: $primary !important;
+				text-decoration: underline;
+			}
 		}
 	}
 }
