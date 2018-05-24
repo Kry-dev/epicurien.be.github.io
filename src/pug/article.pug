@@ -10,6 +10,10 @@ html(lang="en")
         section.article
             .container
                 .row
+                    .col-md-12
+                        .banner
+                            img.img-responsive.my-3(src="https://loremflickr.com/g/970/250/mac")
+                .row
                     .col-md-8
                         h1 Limoncello (liqueur de citron)
                         p
@@ -51,16 +55,23 @@ html(lang="en")
                             | . Je pense entre autre à des
                             a(href="#")  tiramisu
                             |  modifiés ou encore à des sabayons au limoncello.
-                        a(href="#").mb-3.hidden-sm.hidden-xs
-                            img.text-center.mb-3(src="https://loremflickr.com/g/300/300/london")
+                        a(href="#").d-block.my-3
+                            img.text-center.mx-auto(src="https://loremflickr.com/g/300/300/london")
 
                         h3 Suggestions
-                        .list-group.mb-3
-                            a.list-group-item.list-group-item-info(href='#') Liqueur de prunes
-                            a.list-group-item.list-group-item-info(href='#') Liqueur de fraises
-                            a.list-group-item.list-group-item-info(href='#') Liqueur de prunes digestive
-                            a.list-group-item.list-group-item-info(href='#') Margharita
-                            a.list-group-item.list-group-item-info(href='#') Apéritif aux noix
+                        ul.mb-3
+                            li.d-block.mb-2
+                                a.text-primary.text-underline(href='#') Liqueur de prunes
+                            li.d-block.mb-2
+                                a.text-primary.text-underline(href='#') Liqueur de fraises
+                            li.d-block.mb-2
+                                a.text-primary.text-underline(href='#') Liqueur de prunes digestive
+                            li.d-block.mb-2
+                                a.text-primary.text-underline(href='#') Margharita
+                            li.d-block.mb-2
+                                a.text-primary.text-underline(href='#') Apéritif aux noix
+                        .banner.my-3
+                            img.text-center.mx-auto(src="https://loremflickr.com/g/500/125/london")
                         include global/reccetes-accordion
                         hr
                         include global/socials
@@ -147,7 +158,7 @@ html(lang="en")
                                         .form-group.pull-right
                                             button.btn.btn-primary(type='submit') Submit
                     .col-md-4
-                        a(href="#").banner.mb-3.hidden-sm.hidden-xs
+                        a(href="#").banner.my-3
                             img.img-responsive.mb-3(src="https://loremflickr.com/g/300/600/paris")
                         a(href="#").thumbnail.thumbnail-blocrecipe
                             img(src="https://loremflickr.com/g/450/350/food")
@@ -171,7 +182,7 @@ html(lang="en")
                             p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
                             p Une sorte de petite crêpe roulée faite à base de poivrons farci de fromage frais relevé d’ail et fines herbes. Cela vous fera de délicieuses bouchées pour l’apéritif ou une entrée très originale à base de poivron.
                         hr
-                        a(href="#").banner.mb-3.hidden-sm.hidden-xs
+                        a(href="#").banner.my-3
                             img.img-responsive.mb-3(src="https://loremflickr.com/g/300/300/london")
                         a(href="#").thumbnail.thumbnail-blocrecipe
                             img(src="https://loremflickr.com/g/450/350/food")
