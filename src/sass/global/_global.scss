@@ -102,6 +102,11 @@ article{
 	display: inline-block;
 	vertical-align: top;
 	float: none;
+	margin-bottom: 1rem;
+	@media (max-width: $screen-sm-min){
+		display: block;
+		margin-bottom: 1rem;
+	}
 }
 .vbottom {
 	display: inline-block;
