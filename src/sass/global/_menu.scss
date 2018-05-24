@@ -20,3 +20,9 @@
 		}
 	}
 }
+.nav-pills>li{
+	@media (max-width: $screen-sm-min){
+		display: block;
+		float: none;
+	}
+}
