@@ -1,5 +1,4 @@
 var $ = require('jquery');
-var slick = require('slick-carousel');
 
 $(document).ready(function(){
     $(window).scroll(function() {
@@ -14,9 +13,7 @@ $(document).ready(function(){
         }
     });
 
-
     $("#toTop").click(function() {
         $("html, body").animate({scrollTop: 0}, 1000);
     });
-
 });

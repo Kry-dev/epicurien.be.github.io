@@ -3,10 +3,11 @@
 
 @import "global/slick";
 @import "global/slick-theme";
+@import "global/normalize";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-mincer";
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+/**@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";*/
 @import "../../node_modules/font-awesome/scss/font-awesome";
-@import "https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css";
 @import "../../node_modules/fg-select-css/src/select-css";
 @import "../../node_modules/fg-select-css/src/select-css-arrow";
 @import "../../node_modules/bootstrap-social/bootstrap-social.scss";

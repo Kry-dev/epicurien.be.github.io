@@ -4,7 +4,6 @@ $(document).ready(function(){
     var filters = $('ul.dictionary li a');
 
     triggers.click(function() {
-        console.log('trigger click');
         var takeLetter = $(this).text();
         filters.parent().hide();
 
