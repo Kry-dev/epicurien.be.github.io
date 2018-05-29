@@ -2,14 +2,31 @@
 footer#footer.navbar-default
 	.container
 		.row
-			.navbar(role='navigation')
-				ul.nav.navbar-nav
-					li: a(href='#') Blog de cuisine
-					li: a(href='#') Paniers de fruits et légumes biologiques
-					li: a(href='#') Recettes chocolats cuisine
-					li: a(href='#') Spiruline Biologique
+			hr
+			include socials
+			hr
 		.row
-			p.text-center Copyrights Wonderweb 2004 - 2018
+			.col-md-12
+				.thumbnail.bg-danger.clearfix
+					.col-md-4
+						h2.text-white.text-uppercase.mt-2.mb-0 Newsletter
+						p.text-white.my-0 Abonnez vous a notre newsletter
+					.col-md-8
+						form(action='', method='post', role='form').py-3
+							.input-group
+								input.form-control(type='text', id='', name='', placeholder='votre email')
+								.input-group-btn
+									button.btn.btn-default(type='submit')
+										i.fa.fa-chevron-right
+		.row
+			.col-md-6.col-xs-12
+				.navbar(role='navigation')
+					ul.nav.navbar-nav.text-left
+						li: a(href='#') Blog
+						li: a(href='#') Biere
+						li: a(href='#') Contactez nous
+			.col-md-6.col-xs-12
+				p.text-right.small.py-3.mb-0 Copyrights Wonderweb 2004 - 2018
 	#toTop
 		i.fa.fa-arrow-up
 

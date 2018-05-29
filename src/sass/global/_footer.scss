@@ -1,4 +1,5 @@
 #footer{
+	overflow: hidden;
 	.navbar{
 		margin-bottom: 0;
 	}
@@ -22,6 +23,12 @@
 					}
 				}
 			}
+		}
+	}
+	@media (max-width: $screen-sm-max){
+		.nav.navbar-nav,
+		.text-right.small{
+			text-align: center !important;
 		}
 	}
 }
