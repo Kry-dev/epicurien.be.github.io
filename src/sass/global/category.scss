@@ -1,0 +1,13 @@
+.category{
+	&-item{
+		display: block;
+		background: $state-info-bg;
+		color: $info;
+		margin-bottom: 1rem;
+		padding: .5rem 1rem;
+		&:hover{
+			background: $info;
+			color: $white;
+		}
+	}
+}
